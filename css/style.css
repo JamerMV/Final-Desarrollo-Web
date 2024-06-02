@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;400;600;700&display=swap');
+@import url('bootstrap-icons-1.11.2/font/bootstrap-icons.min.css');
+
+:root{
+    --color1: #F21D92;
+    --color2: #0150a6;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    --color-gris-oscuro: #333333;
+    --color-gris-claro: #CCCCCC;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Readex Pro', sans-serif;
+    color: var(--color-blanco);
+    background:#87CEEB;
+}
+h1{
+    font-size: 100px;
+    font-weight: 700;
+}
+h2{
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom:100px
+}
+h5{
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+h6{
+    font-size: 25px;
+    font-weight: 600;
+}
+a{
+    color: var(--color-blanco);
+}
+/*BARRA DE MENU*/
+.nav-link{
+    color: var(--color-blanco);
+}
+.nav{
+    --bs-nav-link-padding-x: 2rem;
+    align-items: flex-end;
+}
+.nav-link:hover {
+    color:#b9dbff ;
+}
+p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+}
+.padded{
+    padding: 50px;
+}
+li{
+    margin-right: 45px;
+    font-size: 20px;
+    font-weight: 500;
+    list-style: none;
+}
+/*HEADER*/
+.header .padded{
+    
+}
+/*SECTION MAIN BANNER*/
+#main-banner img{
+    border-radius: 11%;
+}
+#main-banner h1{
+    padding-bottom: 25px;
+}
+#main-banner .row{
+    justify-content: space-evenly;
+}
+.btn{
+    --bs-btn-font-size: 1rem;
+    border-radius: 38px;
+    padding: 9px 30px;
+    border: solid 3px;
+}
+/*SECTION DIENTESUNO*/
+#dientesuno img{
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+#dientesuno .row{
+    justify-content: space-around;
+}
+/*SECTION VENTAS*/
+#ventas h2{
+    font-size: 70px;
+    text-align: left;
+    margin-bottom: 70px;
+}
+#ventas .row{
+    justify-content: space-around;
+}
+#ventas h1{
+    font-weight: 500;
+    text-align: left;
+}
+#ventas h5{
+    color: #000000;
+    text-align: left;
+}
+#ventas .container{
+    margin-bottom: 120px;
+}
+/*SECTION DIENTESDOS*/
+img{
+    border-radius: 7%;
+}
+#dientesdos .row{
+    justify-content: space-around;
+}
+#dientesdos h5{
+    font-size: 50px;
+}
+#dientesdos .padded{
+    padding-top: 150px;
+}
+/*clientes*/
+#clientes h2{
+    text-align: none;
+    margin-bottom: 0;
+}
+#clientes .row{
+    justify-content: space-between;
+    align-items: center;
+}
+/*COMENTARIOS*/
+.comentarios{
+    margin-bottom: 45px;
+}
+/*CONTACTENOS*/
+#contactenos{
+    padding-top: 90px;
+}
+#contactenos h5{
+    font-size: 40px;
+    text-align: center;
+    color: #000000;
+}
+#contactenos h2{
+    margin-bottom: 55px;
+}
+/*FORM-CONTROL*/
+.form-control {
+    padding: 9px 30px;
+    border-radius: 29px;
+    border: solid 1px var(--color-blanco);
+    background-color: #fff0;
+}
+#contactenos .row{
+    align-items: center;
+}
+#contactenos button{
+    padding: 9px 80px;
+}
+.form-control:focus{
+    background-color: #fff0;
+}
+/*FOOTER*/
+#futer .nav-link{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#futer .padded{
+    border-top: solid 1px var(--color-negro);
+}
+#futer p{
+    font-weight: 300;
+    font-size: 25px;
+}
+#futer h5{
+    font-weight: 700;
+    font-size: 30px;
+}
+#futer li{
+    margin-right: 0;
+}
+/*IR ARRIBA*/
+#ir-arriba{
+    font-size: 20px;
+    padding: 12px 16px;
+    background-color: #00688B;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: var(--color-blanco);
+    border-radius: 10%;
+    transition: all .3s ease-in-out;
+}
+#ir-arriba:hover{
+    background-color: #ff1919;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+}
+.nav-link:hover {
+    color: #ff1919;
+}
+
+@media(min-width: 1720px){
+    .container{
+        max-width: 1440px;
+    }
+}
+@media(max-width: 900px){
+    .row{
+    flex-direction: column;
+    align-content: center;
+    }
+    p{
+        text-align: left;
+    }
+    h1,h2,h3{
+        text-align: center;
+    }
+    h5{
+        text-align: center;
+    }
+    h6{
+        text-align: center;
+    }
+    .nav{
+        align-content: center;
+        flex-direction: column;
+    }
+    #ventas .container {
+        margin-bottom: 0px;
+    }
+    #futer p{
+        text-align: center;
+    }
+}
